@@ -1,7 +1,7 @@
-# Splunk Firewall Log Monitoring Project
+# Splunk Firewall Log Monitoring
 
-## Overview
-Analyzed firewall CSV logs using Splunk to monitor blocked traffic and detect suspicious source IPs.
+## Project Overview
+Analyzed firewall CSV logs using Splunk to detect blocked traffic, identify suspicious IPs/ports, and build dashboards and alerts for proactive monitoring.
 
 ## Data Source
 Firewall logs in CSV format.
@@ -16,8 +16,11 @@ Firewall logs in CSV format.
 
 ## Sample Queries
 
-index=firewall action=block | stats count
-index=firewall action=block | stats count by src_ip
+## show blocked traffic
+index=firewall action=block | stats count 
+## count by source ip
+index=firewall action=block | stats count by src
+## Timechart of Attack Trend
 index=firewall action=block | timechart count
 
 
