@@ -15,9 +15,11 @@ Firewall logs in CSV format.
 - Alert creation for suspicious activity
 
 ## Sample Queries
+
 index=firewall action=block | stats count
 index=firewall action=block | stats count by src_ip
 index=firewall action=block | timechart count
+
 
 ## Outcome
 Identified malicious IP addresses and visualized firewall security events using Splunk dashboards and alerts.
