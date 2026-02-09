@@ -1,0 +1,8 @@
+INFO User login success from 10.0.0.2
+FAILED Login from 192.168.1.10
+FAILED Login from 192.168.1.10
+FAILED Login from 192.168.1.10
+INFO File uploaded
+FAILED Login from 172.16.0.5
+WARNING Too many requests from 192.168.1.10
+ERROR Unauthorized access detected
